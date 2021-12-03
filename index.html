@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kkn1125/penli@01d41dbf5391837f464cccc1638d25580090257e/docs/assets/css/penli.css" integrity="sha384-zMA4ocyrni2zeVMYOosIeQ6Rp9xFm04l9iNLiWig5mXoYmwWaW0Vx0Awgfwd734x" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kkn1125/penli@01d41dbf5391837f464cccc1638d25580090257e/docs/assets/css/penli.theme.css" integrity="sha384-ghvegK2uZphn4gtQdfs4LiVaMmsHSoA6Cg86qGwCaKAjhn+NBP2HjtPfww4OyOSn" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kkn1125/penli@vv013/docs/assets/css/penli.css" integrity="sha384-9rdE3UnEE/uO/9YRo4rMRsBynA9KU3Pn8NQQNoHiCQD0EEXs6PPcf/LbvCxQ4vse" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kkn1125/penli@vv013/docs/assets/css/penli.theme.css" integrity="sha384-d4ynKiIjhKoiJJWEuY6FBHRZbXqkWYLqz6mNMQzLtDorPEvdDAFFzf4EIMIgqswz" crossorigin="anonymous">
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
             integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -129,9 +129,32 @@
                             data-msg="이번 달 축제를 소개합니다.">
                             ?
                         </span>
+                        <div>
+                            지역/축제 이름: <input type="text" id="inputText"> <br>
+                            날짜<br>
+                            연: <input type="number" min="1900" max="2099" step="1" value="2021" id="year">
+                            월: <select id="month">
+                                    <option value="01">1월</option>
+                                    <option value="02">2월</option>
+                                    <option value="03">3월</option>
+                                    <option value="04">4월</option>
+                                    <option value="05">5월</option>
+                                    <option value="06">6월</option>
+                                    <option value="07">7월</option>
+                                    <option value="08">8월</option>
+                                    <option value="09">9월</option>
+                                    <option value="10">10월</option>
+                                    <option value="11">11월</option>
+                                    <option value="12">12월</option>
+                                </select>
+                            일: <input type="number" min="1" max="31" step="1" id="day">
+                            <!-- <button id="moreBtn">+100 더 보기</button>
+                            <button id="next">다음페이지</button> -->
+                            
+                        </div>
                     </div>
 
-                    <div class="card-group justify-content-around card-dv-auto g-2">
+                    <div class="card-group justify-content-around card-dv-auto g-2" id="result">
 
                     </div>
                 </section>
@@ -183,7 +206,7 @@
                 <div><a href="https://kkn1125.github.io/mkDocumentifyJS/" class="nav-link">documentify</a></div>
             </div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/gh/kkn1125/penli@01d41dbf5391837f464cccc1638d25580090257e/docs/assets/js/penli.js" integrity="sha384-v092hQzYiAjZ8CmLjYIvwr6bO3OnvXutDanly9WXVjX0TPLofgv01rcexjRXpdm2" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/kkn1125/penli@vv013/docs/assets/js/penli.js" integrity="sha384-nsIRFRt8WvtPsJBMOSiAzsvqgVc0ViFiMC80JMDsPiz6LnNXgOzelTajC1MhBm41" crossorigin="anonymous"></script>
         <script src="assets/js/withme.component.js"></script>
         <script src="assets/js/withme.js"></script>
     </body>

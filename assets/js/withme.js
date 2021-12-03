@@ -63,18 +63,8 @@ const Withme = (function(){
         this.addNodes = function(){
             for(let key in nodes.pages){
                 cardWrap.insertAdjacentHTML('beforeend', nodes.card.render(
-                    nodes.pages[key].link,
-                    nodes.pages[key].info,
-                    nodes.pages[key].title,
-                    nodes.pages[key].content,
-                    nodes.pages[key].start,
-                    nodes.pages[key].end,
-                    nodes.pages[key].addr,
-                    nodes.pages[key].call,
+                    nodes.pages[key]
                 ));
-            }
-            for(let i in [...new Array(10)]){
-                cardWrap.insertAdjacentHTML('beforeend', nodes.card.render());
             }
         }
     }
@@ -98,4 +88,4 @@ const Withme = (function(){
     }
 })();
 
-Withme.init();
+// Withme.init();
